@@ -36,11 +36,11 @@ home:
 
     primaryBtn:                              # 主按钮（强调色按钮）
       text: "阅读文章"                       # 按钮文字
-      url: "/posts"                          # 点击后跳转的路径
+      url: "/my-blog/posts"                          # 点击后跳转的路径
 
     secondaryBtn:                            # 次按钮（轮廓样式按钮）
       text: "关于我们"                       # 按钮文字
-      url: "/about"                          # 点击后跳转的路径
+      url: "/my-blog/about"                          # 点击后跳转的路径
 
     badgeText: "欢迎来到我的世界"            # 首屏顶部小徽章文字
     greeting: "你好，我是"                   # 主标题前的问候语
@@ -61,7 +61,7 @@ home:
 
     showMore:                                # “查看更多”按钮配置
       text: "查看所有文章"                   # 按钮文字
-      url: "/posts"                          # 按钮跳转路径，通常指向文章列表页
+      url: "/my-blog/posts"                          # 按钮跳转路径，通常指向文章列表页
 
 
   # --------------------------------------------------------------------------
@@ -72,7 +72,7 @@ home:
     title: "关于 Estrelas-star"                    # 简介区块标题
     description: "一名热爱技术的开发者，专注于前端开发、移动应用和新兴技术。相信代码可以改变世界，享受解决问题的过程，热爱分享知识。"  # 个人简介段落
     btnText: "了解更多"                      # “了解更多”按钮文字
-    btnUrl: "/about"                         # 按钮跳转路径，指向关于页面
+    btnUrl: "/my-blog/about"                         # 按钮跳转路径，指向关于页面
 
 
   # --------------------------------------------------------------------------
@@ -174,7 +174,7 @@ assets:
 
   # ----- 站点头像 -----
   avatar:
-    url: "/headimg.jpg"                      # 头像图片的 URL 路径，支持本地路径或完整 URL
+    url: "/my-blog/headimg.jpg"                      # 头像图片的 URL 路径，支持本地路径或完整 URL
     alt: "站点头像"                           # 图片加载失败或无障碍访问时显示的替代文本
 
   # ----- 背景图片 -----
@@ -238,7 +238,7 @@ social:
       show: true
 
     - platform: "rss"
-      url: "/index.xml"                      # RSS 订阅地址，通常指向 Hugo 生成的 index.xml
+      url: "/my-blog/index.xml"                      # RSS 订阅地址，通常指向 Hugo 生成的 index.xml
       icon: "fas fa-rss"
       label: "RSS 订阅"
       show: true
@@ -541,13 +541,13 @@ error404:
     home:
       text: "返回首页"                       # 按钮文字
       icon: "fas fa-home"                    # 按钮图标
-      url: "/"                               # 点击跳转路径
+      url: "/my-blog/"                               # 点击跳转路径
 
     # 浏览文章按钮
     posts:
       text: "浏览文章"
       icon: "fas fa-file-alt"
-      url: "/posts/"
+      url: "/my-blog/posts/"
 
 
 # ============================================================================

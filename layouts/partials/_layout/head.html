@@ -14,20 +14,16 @@
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 
 {{- /* ========== 资源预连接和 DNS 预解析 ========== */ -}}
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://tc.alcy.cc">
 
 {{- /* ========== 本地字体样式 ========== */ -}}
 <link rel="stylesheet" href="{{ "lib/fonts/fonts.css" | relURL }}">
 
-{{- /* ========== Font Awesome 图标库（CDN + 本地回退） ========== */ -}}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" media="print" onload="this.onload=null;this.media='all'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
-{{- /* Font Awesome 本地回退方案：当 CDN 不可用时切换 */ -}}
-<link id="fa-fallback-css" data-href='{{ "lib/fontawesome/css/all.min.css" | relURL }}' rel="alternate stylesheet" disabled>
+{{- /* ========== Font Awesome 图标库（本地托管，避免外网 CDN 在国内加载失败） ========== */ -}}
+<link rel="stylesheet" href="{{ "lib/fontawesome/css/all.min.css" | relURL }}" crossorigin="anonymous">
 
-{{- /* ========== AOS 动画库（CDN + 本地回退） ========== */ -}}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" media="print" onload="this.onload=null;this.media='all'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous"></noscript>
+{{- /* ========== AOS 动画库（本地托管） ========== */ -}}
+<link rel="stylesheet" href="{{ "lib/aos/aos.css" | relURL }}" crossorigin="anonymous">
 
 {{- /* ========== 主题主 CSS（SCSS 编译） ========== */ -}}
 {{ partial "_layout/head/css.html" . }}

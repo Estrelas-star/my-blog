@@ -147,8 +147,9 @@
   <script defer src="{{ "lib/typed.js/typed.js" | relURL }}" crossorigin="anonymous"></script>
 
   {{- /* 自定义打字机初始化：放慢打字速度（typeSpeed 60 -> 120ms） */ -}}
-  <script defer>
-    (function () {
+  {{- /* 注意：内联脚本的 defer 属性会被忽略，用 DOMContentLoaded 等待 Typed.js 加载完成 */ -}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       if (typeof Typed === 'undefined') return;
       document.querySelectorAll('.hero-typed-text').forEach(function (el) {
         var data = el.getAttribute('data-typed');
@@ -164,18 +165,19 @@
           cursorChar: '|'
         });
       });
-    })();
+    });
   </script>
 
   {{- /* ========== 禁用粒子特效（糖果雨/星空） ========== */ -}}
   {{- /* 在主题主 JS 初始化完成后销毁 Canvas 粒子动画层，保留其他效果 */ -}}
-  <script defer>
-    (function () {
+  {{- /* 注意：内联脚本的 defer 属性会被忽略，用 DOMContentLoaded 等待主 JS 执行完成 */ -}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var theme = window.IllusionTheme;
       if (theme && theme.EffectsManager && typeof theme.EffectsManager.destroy === 'function') {
         theme.EffectsManager.destroy();
       }
-    })();
+    });
   </script>
 
   {{- /* 站点全局配置，供前端 JS 使用 */ -}}

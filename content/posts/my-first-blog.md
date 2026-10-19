@@ -7,7 +7,7 @@ tags = ['随笔']
 categories = ['生活']
 +++
 
-### <span style="color:orange;">产研团建</span>
+## <span style="color:pink;">产研团建</span>
 
 > “社交的起因在于人们生活的单调和空虚。社交的需要驱使他们聚到一起，但各自具有的许多令人厌憎的品行又驱使他们分开。”
 > —— 叔本华
@@ -16,7 +16,7 @@ categories = ['生活']
 
 ---
 
-### <span style="color:orange;">非2️⃣🦔⭕的困惑</span>
+## <span style="color:pink;">非2️⃣🦔⭕的困惑</span>
 
 > “猛兽总是独行，牛羊才成群结队。”
 > —— 鲁迅

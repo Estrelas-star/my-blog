@@ -168,18 +168,6 @@
     });
   </script>
 
-  {{- /* ========== 禁用粒子特效（糖果雨/星空） ========== */ -}}
-  {{- /* 在主题主 JS 初始化完成后销毁 Canvas 粒子动画层，保留其他效果 */ -}}
-  {{- /* 注意：内联脚本的 defer 属性会被忽略，用 DOMContentLoaded 等待主 JS 执行完成 */ -}}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var theme = window.IllusionTheme;
-      if (theme && theme.EffectsManager && typeof theme.EffectsManager.destroy === 'function') {
-        theme.EffectsManager.destroy();
-      }
-    });
-  </script>
-
   {{- /* 站点全局配置，供前端 JS 使用 */ -}}
   <script>
     window.siteConfig = {

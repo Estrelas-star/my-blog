@@ -9,7 +9,7 @@ categories = ['生活']
 
 ### <span style="color:orange;">产研团建</span>
 
-非常之<span style="color:grey;">*~~欢乐~~*</span>(*尴尬* 的一次聚会… 没有技术妹子我无疑是<span style="color:red;">绝望</span>🤢的 哦，还有还有，是谁把自我介绍环节给删掉了，非常不爽之👿 唉唉，我何时能把脸和名字对上啊
+非常之<span style="color:gray;"><del><em>欢乐</em></del></span>(<em>尴尬</em> 的一次聚会...没有技术妹子我无疑是<span style="color:red;">绝望</span> 😭 的 哦，还有还有，是谁把自我介绍环节给删掉了，非常不爽之 😈 唉唉，我何时能把脸和名字对上啊
 
 ---
 

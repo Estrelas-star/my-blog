@@ -674,7 +674,7 @@ layout:
     # ----- Canvas 粒子背景效果（Particles） -----
     # 在页面背景中使用 Canvas 绘制动态粒子动画
     # 移动端和低性能设备下会自动降低粒子密度或关闭
-    particles: false                         # true=启用，false=关闭
+    particles: true                         # true=启用，false=关闭
 
     # ----- 夜间星空效果（Night Sky） -----
     # 在暗色主题下渲染星尘、流星、萤火虫等动效

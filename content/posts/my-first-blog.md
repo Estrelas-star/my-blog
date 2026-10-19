@@ -1,13 +1,11 @@
 +++
-title = '一些碎碎念'
+title = '非二刺螈的一些小烦恼'
 date = '2026-10-19'
 draft = false
-description = '我的第一篇博客文章'
-tags = \['随笔']
-categories = \['生活']
+tags = ['随笔']
+categories = ['生活']
 +++
 
-### 非二刺螈的一些小烦恼
+欢迎来到我的博客！
 
-emmmm
-
+这里是正文开头，以后就可以在这里写东西啦。

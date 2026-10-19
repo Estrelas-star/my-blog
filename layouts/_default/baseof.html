@@ -5,6 +5,10 @@
 <head>
   {{- /* 记录页面开始加载的时间戳 */ -}}
   <script>window.pageLoadTime = performance.now();</script>
+  {{- /* 禁用滚动入场动画：提供 AOS 空实现，避免主题 JS 回退到 IntersectionObserver 动画 */ -}}
+  <script>
+    window.AOS = { init: function () {}, refresh: function () {}, refreshHard: function () {} };
+  </script>
   {{- /* 引入全局头部：元数据、OG、CSS、JS、Schema 等 */ -}}
   {{ partial "_layout/head.html" . }}
   {{- /* 全局国际化文本数据，供前端 JS 使用 */ -}}
@@ -139,9 +143,16 @@
     <img src="" alt="" id="img-lightbox-img">
   </div>
 
-  {{- /* ========== 第三方库本地加载（避免外网 CDN 在国内加载失败） ========== */ -}}
-  <script defer src="{{ "lib/aos/aos.js" | relURL }}" crossorigin="anonymous"></script>
-  <script defer src="{{ "lib/typed.js/typed.js" | relURL }}" crossorigin="anonymous"></script>
+  {{- /* ========== 禁用视觉特效脚本 ========== */ -}}
+  {{- /* 粒子（糖果雨）/星空效果：在主题主 JS 初始化完成后销毁 Canvas 动画层 */ -}}
+  <script defer>
+    (function () {
+      var theme = window.IllusionTheme;
+      if (theme && theme.EffectsManager && typeof theme.EffectsManager.destroy === 'function') {
+        theme.EffectsManager.destroy();
+      }
+    })();
+  </script>
 
   {{- /* 站点全局配置，供前端 JS 使用 */ -}}
   <script>

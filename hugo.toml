@@ -24,6 +24,10 @@ theme = 'illusion'
 defaultContentLanguage = 'zh'
 defaultContentLanguageInSubdir = false
 enableGitInfo = false
+# ========== 代码压缩 ==========
+# minifyOutput: 开启 Hugo 输出代码压缩（HTML/CSS/JS），减小文件体积、加快加载
+[minify]
+  minifyOutput = true
 
 # ========== 功能开关 ==========
 # 此部分包含所有可通过参数控制的站点功能，是后期最常调整的配置区域。
@@ -60,10 +64,10 @@ enableGitInfo = false
   enableDarkMode = true
   enableSearch = true
   searchProvider = "local"
-  enableParticles = true
-  enable3DEffects = true
-  enableScrollAnimations = true
-  enableTypewriter = true
+  enableParticles = false
+  enable3DEffects = false
+  enableScrollAnimations = false
+  enableTypewriter = false
   enableAccessibility = true
   enableTOC = true
   enableComments = false

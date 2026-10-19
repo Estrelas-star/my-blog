@@ -193,7 +193,7 @@ assets:
 
     # 自适应背景图（推荐使用，自动适配不同设备和分辨率）
     adaptive:
-      url: "https://t.alcy.cc/ycy"           # 背景图 URL，不区分移动端和桌面端
+      url: "/my-blog/images/bg.webp"         # 背景图 URL（本地压缩后的 WebP）
       alt: "自适应背景"
       description: "推荐使用，自动适配不同设备"  # 对该模式的简要说明文字
 
@@ -663,7 +663,7 @@ layout:
     # ----- 卡片 3D 倾斜效果（Card 3D Tilt） -----
     # 鼠标悬停时卡片根据光标位置产生轻微 3D 倾斜，增强立体感
     # TypeScript 仅负责计算 3D 变换变量，实际 CSS transform 由样式表完成
-    card3d: true                             # true=启用，false=关闭
+    card3d: false                            # true=启用，false=关闭
 
     # ----- 卡片流光边缘效果（Card Shine） -----
     # 鼠标悬停时卡片边框产生动态流光高亮效果
@@ -672,12 +672,12 @@ layout:
 
     # ----- 滚动渐现动画（Scroll Reveal） -----
     # 页面滚动时，元素进入可视区域后以淡入+上移动画渐显
-    scrollReveal: true                       # true=启用，false=关闭
+    scrollReveal: false                      # true=启用，false=关闭
 
     # ----- Canvas 粒子背景效果（Particles） -----
     # 在页面背景中使用 Canvas 绘制动态粒子动画
     # 移动端和低性能设备下会自动降低粒子密度或关闭
-    particles: true                          # true=启用，false=关闭
+    particles: false                         # true=启用，false=关闭
 
     # ----- 夜间星空效果（Night Sky） -----
     # 在暗色主题下渲染星尘、流星、萤火虫等动效
@@ -710,7 +710,7 @@ layout:
     mouseGlow: true                          # true=启用，false=关闭
 
     # Hero 装饰性粒子（Hero 区域独立的小型粒子动画）
-    particles: true                          # true=启用，false=关闭
+    particles: false                         # true=启用，false=关闭
 
     # Hero 元素轻微浮动动画（头像、标题等元素的上下浮动效果）
     floating: true                           # true=启用，false=关闭
@@ -736,7 +736,7 @@ layout:
     mouseGlow: true                          # true=启用，false=关闭
 
     # 卡片 3D 倾斜效果（根据鼠标位置计算倾斜角度）
-    tilt: true                               # true=启用，false=关闭
+    tilt: false                              # true=启用，false=关闭
 
     # 卡片内图片鼠标悬停时缩放效果（scale 放大）
     imageZoom: true                          # true=启用，false=关闭

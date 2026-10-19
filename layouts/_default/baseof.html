@@ -146,6 +146,27 @@
   {{- /* ========== 打字机效果：副标题动态文字（本地加载 Typed.js） ========== */ -}}
   <script defer src="{{ "lib/typed.js/typed.js" | relURL }}" crossorigin="anonymous"></script>
 
+  {{- /* 自定义打字机初始化：放慢打字速度（typeSpeed 60 -> 120ms） */ -}}
+  <script defer>
+    (function () {
+      if (typeof Typed === 'undefined') return;
+      document.querySelectorAll('.hero-typed-text').forEach(function (el) {
+        var data = el.getAttribute('data-typed');
+        var strings = data ? JSON.parse(data) : [];
+        new Typed(el, {
+          strings: strings,
+          typeSpeed: 120,
+          backSpeed: 40,
+          backDelay: 2000,
+          startDelay: 500,
+          loop: true,
+          showCursor: true,
+          cursorChar: '|'
+        });
+      });
+    })();
+  </script>
+
   {{- /* ========== 禁用粒子特效（糖果雨/星空） ========== */ -}}
   {{- /* 在主题主 JS 初始化完成后销毁 Canvas 粒子动画层，保留其他效果 */ -}}
   <script defer>

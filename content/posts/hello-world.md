@@ -1,7 +1,7 @@
 +++
 title = '你好，世界'
 date = '2026-10-18T23:30:00+08:00'
-draft = false
+draft = true
 discription = '我的第一篇博客'
 tags = ['随笔']
 categories = ['生活']

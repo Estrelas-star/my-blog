@@ -1,7 +1,7 @@
 +++
 title = '一些碎碎念'
 date = '2026-10-19'
-draft = false
+draft = true
 description = '注意到这是一篇吐槽贴'
 tags = ['随笔']
 categories = ['生活']

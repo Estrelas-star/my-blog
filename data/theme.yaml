@@ -190,7 +190,7 @@ assets:
 
     # 自适应背景图（推荐使用，自动适配不同设备和分辨率）
     adaptive:
-      url: "/my-blog/images/bg.webp"         # 背景图 URL（本地压缩后的 WebP）
+      url: ""         # 背景图 URL（本地压缩后的 WebP）
       alt: "自适应背景"
       description: "推荐使用，自动适配不同设备"  # 对该模式的简要说明文字
 

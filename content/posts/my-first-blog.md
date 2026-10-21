@@ -20,4 +20,6 @@ categories = ['生活']
 
 其实笨人更喜欢用图片记录生活吧，因为文笔实在是不咋地......但是吧，又感觉博客就应该是大段的文字描述  唉唉，又焦虑上了 
 就是觉得如果没有学习新的知识的话，好像也没有记录的意义，毕竟如果只是单纯写给自己看的话，我就不会在博客里公开了(draft=true)，这对i人来说是一种折磨
-<img src="/my-blog/images/photo1.jpg" width="50%" style="border-radius:10px; box-showder:0 4px 8px rgb(0,0,0,2);">
+<div stytle="text-align:left; margin:20px 0;">
+	<img src="/my-blog/images/photo1.jpg" width="20%" style="border-radius:10px; box-showder:0 4px 8px rgb(0,0,0,2);">
+</div>

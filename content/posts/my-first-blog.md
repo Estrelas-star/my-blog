@@ -23,3 +23,7 @@ categories = ['生活']
 <div stytle="text-align:left; margin:20px 0;">
 	<img src="/my-blog/images/photo1.jpg" width="20%" style="border-radius:10px; box-showder:0 4px 8px rgb(0,0,0,2);">
 </div>
+
+## <span style="color:pink;">C++</span>
+
+不行了，此刻我想吐槽的心情达到了顶峰~就是说学校机房的电脑简直拉完了。。。选电脑跟<strong>开盲盒</strong>似的。。。第一台键盘就坏了。。。第二台直接卡了，连个小小的ctrl+c的要求都不能满足。。。于是乎，我就这么逃课了。。。(在机房里带了不到十分钟
